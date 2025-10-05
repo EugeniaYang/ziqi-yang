@@ -23,10 +23,10 @@ export default function Home() {
             Generative AI.
           </p>
           <div className="space-x-4">
-            <Link href="/research">
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <Link href="./research" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+              {/* <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"> */}
                 Research
-              </button>
+              {/* </button> */}
             </Link>
             <Link href="/internship">
               <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">

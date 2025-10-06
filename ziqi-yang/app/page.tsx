@@ -8,7 +8,7 @@ export default function Home() {
       <section className="flex flex-col md:flex-row items-center mb-16">
         <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
           <Image
-            src="/avatar.jpg" // 替换成你的头像路径 (放在 public/avatar.jpg)
+            src="/profile-portugal.png" // 替换成你的头像路径 (放在 public/avatar.jpg)
             alt="Ziqi Yang"
             width={180}
             height={180}
@@ -23,7 +23,7 @@ export default function Home() {
             Generative AI.
           </p>
           <div className="space-x-4">
-            <Link href="./research" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <Link href="/research" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
               {/* <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"> */}
                 Research
               {/* </button> */}
@@ -104,10 +104,10 @@ export default function Home() {
           {/* Another Highlight */}
           <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
             <Image
-              src="/projects/recover.png"
+              src="/projects/doctor-563428_1280.jpg"
               alt="RECOVER Project"
-              width={600}
-              height={400}
+              width={400}
+              height={300}
               className="object-cover"
             />
             <div className="p-4">
@@ -142,7 +142,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <strong>CardioAI</strong>. CHI 2025.{" "}
+            Siyi Wu, Weidan Cao, Shihan Fu, Bingsheng Yao, <strong>Ziqi Yang</strong>, Changchang Yin, Varun Mishra, Daniel Addison, Ping Zhang, and Dakuo Wang. 2025. CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 313, 1–22. https://doi.org/10.1145/3706598.3714272{" "}
             <a
               href="https://doi.org/10.1145/3706598.3714272"
               target="_blank"

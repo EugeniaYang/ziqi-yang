@@ -11,40 +11,48 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Big Data Hub PM / Design",
-    subtitle: "Notion Case Study",
+    title: "Designing for Big Data Hub: Professionals' Data Pipelines",
+    subtitle: "Internship at eBay",
     href: "https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5",
     category: "UX Research and Design Internships",
     imageSrc: "/projects/big-data-hub.png",
   },
+    {
+    title: "Designing for Sustainable and Efficient Supply Chain Management with Interactions and AI",
+    subtitle: "Internship at Microsoft C+AI Dynamics 365",
+    href: "https://ziqis-portfolio.webflow.io/work/microsoft",
+    category: "UX Research and Design Internships",
+    imageSrc: "/projects/microsoft-cover.png",
+  },
   {
     title: "Campus Connect",
-    subtitle: "Webflow Project",
+    subtitle: "UX Research and Design for Campust Social App",
     href: "https://ziqis-portfolio.webflow.io/work/campus-connect",
-    category: "Interaction Design",
+    category: "UX R&D Projects",
     imageSrc: "/projects/campus-connect.png",
+  },
+    {
+    title: "MyVoice Website Optimization",
+    subtitle: "UX Research and Design for Youth",
+    href: "  https://ziqis-portfolio.webflow.io/work/myvoice",
+    category: "UX R&D Projects",
+    imageSrc: "/projects/myvoice.png",
   },
   {
     title: "APP Rutabagga UI",
-    subtitle: "Notion Design Case",
+    subtitle: "App Interface Design",
     href: "https://ziqi-yang.notion.site/APP-Rutabagga-UI-8dfaa9decf474ff1a7a15995c7e89b0a",
     category: "Graphic Design",
     imageSrc: "/projects/rutabagga.png",
   },
   {
-    title: "Graphic Design Portfolio",
-    subtitle: "Graphic / Visual Design",
+    title: "Graphic Design Showcase",
+    subtitle: "Photography, Banner, and Inforgraphics",
     href: "https://ziqis-portfolio.webflow.io/work/graphic-design",
     category: "Graphic Design",
-    imageSrc: "/projects/graphic-design.png",
+    imageSrc: "/projects/infographics.png",
   },
-  {
-    title: "Microsoft Intern Work",
-    subtitle: "Product / Design Intern",
-    href: "https://ziqis-portfolio.webflow.io/work/microsoft",
-    category: "UX Research and Design Internships",
-    imageSrc: "/projects/microsoft.png",
-  },
+
 ];
 
 export default function DesignProjectsPage() {

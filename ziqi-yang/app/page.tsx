@@ -127,6 +127,60 @@ export default function Home() {
         </div>
       </section>
 
+    {/* UX Research & Design Highlights Section */}
+<section className="mb-16">
+  <h2 className="text-2xl font-bold mb-6">UX Research &amp; Design Highlights</h2>
+  <div className="grid md:grid-cols-2 gap-6">
+
+    {/* Big Data Hub Project */}
+    <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <Image
+        src="/projects/big-data-hub.png" // placeholder, put actual preview later
+        alt="Big Data Hub"
+        width={600}
+        height={400}
+        className="object-cover"
+      />
+      <div className="p-4">
+        <h3 className="font-semibold text-lg mb-2">
+          Understanding Professionals' Data Pipelines for eBay Big Data Hub
+        </h3>
+        <p className="text-sm text-gray-600 mb-2">User Research, Product Management, UX Design</p>
+        <a
+          href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5"
+          className="text-blue-600 hover:underline"
+        >
+          [Showcase]
+        </a>
+      </div>
+    </div>
+
+    {/* MyVoice Website Optimization */}
+    <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <Image
+        src="/projects/myvoice.png" // placeholder, replace with actual screenshot
+        alt="MyVoice Website Optimization"
+        width={600}
+        height={400}
+        className="object-cover"
+      />
+      <div className="p-4">
+        <h3 className="font-semibold text-lg mb-2">
+          Understanding Multiple Stakeholders for a Youth-centered Website
+        </h3>
+        <p className="text-sm text-gray-600 mb-2">User Research, UX Design</p>
+        <a
+          href="https://ziqis-portfolio.webflow.io/work/myvoice"
+          className="text-blue-600 hover:underline"
+        >
+          [Showcase]
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
       {/* Selected Publications */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6">Selected Publications</h2>

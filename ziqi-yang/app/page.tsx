@@ -143,7 +143,7 @@ export default function Home() {
       />
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-2">
-          <p>Understanding Professionals' Data Pipelines for eBay Big Data Hub</p>
+          Understanding Professionals to Design Data Pipelines for eBay Big Data Hub
         </h3>
         <p className="text-sm text-gray-600 mb-2">User Research, Product Management, UX Design</p>
         <a

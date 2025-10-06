@@ -142,7 +142,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            Siyi Wu, Weidan Cao, Shihan Fu, Bingsheng Yao, <strong>Ziqi Yang</strong>, Changchang Yin, Varun Mishra, Daniel Addison, Ping Zhang, and Dakuo Wang. 2025. CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 313, 1–22. https://doi.org/10.1145/3706598.3714272{" "}
+            Siyi Wu, Weidan Cao, Shihan Fu, Bingsheng Yao, <strong>Ziqi Yang</strong>, Changchang Yin, Varun Mishra, Daniel Addison, Ping Zhang, and Dakuo Wang. 2025. CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI '25). Association for Computing Machinery, New York, NY, USA, Article 313, 1–22. https://doi.org/10.1145/3706598.3714272 {" "}
             <a
               href="https://doi.org/10.1145/3706598.3714272"
               target="_blank"

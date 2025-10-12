@@ -39,6 +39,13 @@ const projects: Project[] = [
     imageSrc: "/projects/myvoice.png",
   },
   {
+    title: "The Shape and Flow of Languages",
+    subtitle: "Designing AR/VR Experiences",
+    href: "https://yangziqi0605.wixsite.com/shape-flow-language/process",
+    category: "AR/VR",
+    imageSrc: "/projects/vr-chinese.png",
+  },
+  {
     title: "APP Rutabagga UI",
     subtitle: "App Interface Design",
     href: "https://ziqi-yang.notion.site/APP-Rutabagga-UI-8dfaa9decf474ff1a7a15995c7e89b0a",
@@ -51,7 +58,8 @@ const projects: Project[] = [
     href: "https://ziqis-portfolio.webflow.io/work/graphic-design",
     category: "Graphic Design",
     imageSrc: "/projects/infographics.png",
-  },
+  }
+  
 
 ];
 

@@ -1,8 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f1f3fe;
+  /* Primary Colors */
+  --background: var(--lavender-blush);
   --foreground: #565676;
+  
+  /* Color Palette - Pastel Theme */
+  --lavender-blush: #fef9fb;
+  --tea-rose-red: #f4cbc6;
+  --melon: #f4afab;
+  --vanilla: #f4eea9;
+  --icterine: #f4f482;
+  
+  /* Primary Colors using pastel palette */
+  --primary: var(--melon);
+  --primary-dark: #f4afab;
+  --primary-light: var(--tea-rose-red);
+  
+  --secondary: var(--vanilla);
+  --secondary-dark: #f4eea9;
+  --secondary-light: var(--icterine);
+  
+  --accent: var(--lavender-blush);
+  --accent-dark: #f7edf0;
+  --accent-light: #ffffff;
+  
+  /* Neutral Colors */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  
+  /* Semantic Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+  
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-muted: #f3f4f6;
+  
+  /* Darker title colors for better contrast - consistent color for all titles */
+  --title-melon-dark: #d47474;
+  --title-vanilla-dark: #d47474;
+  --title-tea-rose-dark: #d47474;
+  --title-icterine-dark: #d47474;
+  --title-lavender-dark: #d47474;
+  
+  /* Gradient Utilities */
+  --gradient-top: linear-gradient(0deg, #f7edf0, #f4cbc6, #f4afab, #f4eea9, #f4f482);
+  --gradient-right: linear-gradient(90deg, #f7edf0, #f4cbc6, #f4afab, #f4eea9, #f4f482);
+  --gradient-bottom: linear-gradient(180deg, #f7edf0, #f4cbc6, #f4afab, #f4eea9, #f4f482);
+  --gradient-left: linear-gradient(270deg, #f7edf0, #f4cbc6, #f4afab, #f4eea9, #f4f482);
+  --gradient-radial: radial-gradient(#f7edf0, #f4cbc6, #f4afab, #f4eea9, #f4f482);
 }
 
 @theme inline {
@@ -14,8 +77,39 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Dark mode overrides */
     --background: #0a0a0a;
     --foreground: #f1f3fe;
+    
+    /* Dark mode color adjustments - deeper pastels */
+    --primary: #e68a8a;
+    --primary-dark: #d47474;
+    --primary-light: #f4afab;
+    
+    --secondary: #e6d68a;
+    --secondary-dark: #d4c274;
+    --secondary-light: #f4eea9;
+    
+    --accent: #e8d5d8;
+    --accent-dark: #d4c2c5;
+    --accent-light: #f7edf0;
+    
+    /* Dark mode text colors */
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+    
+    /* Dark mode background colors */
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --bg-muted: #374151;
+    
+    /* Dark mode title colors - consistent color for all titles */
+    --title-melon-dark: #e68a8a;
+    --title-vanilla-dark: #e68a8a;
+    --title-tea-rose-dark: #e68a8a;
+    --title-icterine-dark: #e68a8a;
+    --title-lavender-dark: #e68a8a;
   }
 }
 
@@ -28,3 +122,73 @@ body {
 p, li, button{
   color: var(--foreground);
 }
+
+/* Custom pastel-themed classes */
+.pastel-button-primary {
+  background-color: var(--melon);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.pastel-button-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.pastel-button-secondary {
+  background-color: var(--vanilla);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease;
+}
+
+.pastel-button-secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+.pastel-button-accent {
+  background-color: var(--tea-rose-red);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.pastel-button-accent:hover {
+  background-color: var(--primary-light);
+}
+
+.pastel-title-primary {
+  color: var(--title-melon-dark);
+}
+
+.pastel-title-secondary {
+  color: var(--title-melon-dark);
+}
+
+.pastel-title-accent {
+  color: var(--title-melon-dark);
+}
+
+.pastel-title-yellow {
+  color: var(--title-melon-dark);
+}
+
+.pastel-title-lavender {
+  color: var(--title-melon-dark);
+}
+
+.pastel-link-primary {
+  color: var(--melon);
+  transition: color 0.3s ease;
+}
+
+.pastel-link-primary:hover {
+  color: var(--primary-dark);
+}
+
+.pastel-link-secondary {
+  color: var(--melon);
+  transition: color 0.3s ease;
+}
+
+.pastel-link-secondary:hover {
+  color: var(--primary-dark);
+}
+

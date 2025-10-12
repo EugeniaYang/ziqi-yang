@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">
-                Sharing Women's Health Experiences Influenced by Genetic Factors
+                Sharing Women{"'"}s Health Experiences Influenced by Genetic Factors
               </h3>
               <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>
                 CHI'26 Submission | University of California, Irvine
@@ -226,7 +226,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  IMWUT'24
+                  IMWUT{"'"}24
                 </span>
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>
                   ⭐ Distinguished Paper Award
@@ -249,7 +249,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  CHI '25
+                  CHI {"'"}25
                 </span>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function Home() {
           
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--tea-rose-red)' }}>
-              <p className="font-semibold">Observing a robot peer's failures facilitates students' classroom learning <a
+              <p className="font-semibold">Observing a robot peer{"'"}s failures facilitates students{"'"} classroom learning <a
                 href="https://doi.org/10.1126/scirobotics.adu5257"
                 target="_blank"
                 className="hover:underline transition-colors pastel-link-primary"

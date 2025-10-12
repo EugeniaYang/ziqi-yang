@@ -11,7 +11,7 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Designing for Big Data Hub: Professionals' Data Pipelines",
+    title: `Designing for Big Data Hub: Professionals${"'"} Data Pipelines`,
     subtitle: "Internship at eBay",
     href: "https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5",
     category: "UX Research and Design Internships",

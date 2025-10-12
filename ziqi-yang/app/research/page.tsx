@@ -87,7 +87,7 @@ export default function ResearchPage() {
                   style={{ color: 'var(--title-melon-dark)' }}
                   target="_blank"
                 >
-                  📄 "Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults" - IMWUT'24 [Distinguished Paper Award]
+                  📄 Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults - IMWUT'24 [Distinguished Paper Award]
                 </a>
               </div>
               <div>
@@ -97,7 +97,7 @@ export default function ResearchPage() {
                   style={{ color: 'var(--title-melon-dark)' }}
                   target="_blank"
                 >
-                  📄 "CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity" - CHI '25
+                  📄 CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity - CHI '25
                 </a>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function ResearchPage() {
               style={{ color: 'var(--title-melon-dark)' }}
               target="_blank"
             >
-               📄 "Observing a robot peer's failures facilitates students' classroom learning" - Science Robotics, 2025
+               📄 Observing a robot peer's failures facilitates students' classroom learning - Science Robotics, 2025
             </a>
               </div>
             </div>

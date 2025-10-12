@@ -87,7 +87,7 @@ export default function Home() {
                 Conducted a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.
               </p>
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women's Health</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women&apos;s Health</span>
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Genetic Factors</span>
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>HCI</span>
               </div>

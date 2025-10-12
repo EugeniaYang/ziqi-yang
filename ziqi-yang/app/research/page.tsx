@@ -15,11 +15,11 @@ export default function ResearchPage() {
           <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
             University of California, Irvine | 2024 – Present
           </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Women's Health Systematic Review and Genetic Health Survey</h4>
+          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Women&apos;s Health Systematic Review and Genetic Health Survey</h4>
           
           <div className="space-y-3">
             <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Conducted a systematic literature review on women's health in HCI, mapping research trends and identifying design gaps.
+              • Conducted a systematic literature review on women&apos;s health in HCI, mapping research trends and identifying design gaps.
             </p>
             <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
               • Designed and deployed a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.
@@ -30,7 +30,7 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women's Health</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women&apos;s Health</span>
             <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Genetic Factors</span>
             <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>HCI</span>
             <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>Mixed Methods</span>

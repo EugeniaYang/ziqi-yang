@@ -81,7 +81,7 @@ export default function Home() {
                 Sharing Women{"'"}s Health Experiences Influenced by Genetic Factors
               </h3>
               <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>
-                CHI'26 Submission | University of California, Irvine
+                CHI{"'"}26 Submission | University of California, Irvine
               </p>
               <p className="text-sm mb-3" style={{ color: 'var(--text-primary)' }}>
                 Conducted a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.

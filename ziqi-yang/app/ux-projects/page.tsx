@@ -13,7 +13,7 @@ const projects: Project[] = [
   {
     title: `Designing for Big Data Hub: Professionals${"'"} Data Pipelines`,
     subtitle: "Internship at eBay",
-    href: "https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5",
+    href: "https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-2859ea4a2d0080e2bd0fda685aa731f7",
     category: "UX Research and Design Internships",
     imageSrc: "/projects/big-data-hub.png",
   },

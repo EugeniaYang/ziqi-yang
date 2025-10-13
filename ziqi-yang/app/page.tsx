@@ -165,7 +165,7 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-6">
 
     {/* Big Data Hub Project */}
-    <a href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5" className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+    <a href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-2859ea4a2d0080e2bd0fda685aa731f7" className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
       <Image
         src="/projects/big-data-hub.png" // placeholder, put actual preview later
         alt="Big Data Hub"

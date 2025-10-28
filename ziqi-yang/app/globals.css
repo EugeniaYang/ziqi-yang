@@ -119,8 +119,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p, li, button{
+p, li{
   color: var(--foreground);
+}
+
+button, span{
+  color: #1f2937;
 }
 
 /* Custom pastel-themed classes */

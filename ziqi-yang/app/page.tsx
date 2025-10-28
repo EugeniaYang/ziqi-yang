@@ -23,11 +23,11 @@ export default function Home() {
             Generative AI.
           </p>
           <div className="space-x-4">
-            <Link href="/research" className="px-4 py-2 text-white rounded-lg transition-colors pastel-button-primary hover:shadow-lg">
+            <Link href="/research" className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
                 Research
             </Link>
             <Link href="/ux-projects">
-              <button className="px-4 py-2 rounded-lg transition-colors pastel-button-secondary hover:shadow-lg">
+              <button className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
                 Design / UX Projects
               </button>
             </Link>
@@ -36,7 +36,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="px-4 py-2 text-white rounded-lg transition-colors pastel-button-primary hover:shadow-lg">
+              <button className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
                 CV
               </button>
             </a>
@@ -87,9 +87,9 @@ export default function Home() {
                 Conducted a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.
               </p>
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women&apos;s Health</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Genetic Factors</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>HCI</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'black' }}>Women&apos;s Health</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'black' }}>Genetic Factors</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'black' }}>HCI</span>
               </div>
               <div className="mt-3">
                 <a
@@ -124,9 +124,9 @@ export default function Home() {
                 Exploring a voice-based assistant leveraging large language models to improve patient–provider communication in healthcare contexts.
               </p>
               <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>LLM</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>Voice Assistant</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Healthcare</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'black' }}>LLM</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'black' }}>Voice Assistant</span>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'black' }}>Healthcare</span>
               </div>
               <div className="mt-3 mb-3">
                 <a
@@ -228,7 +228,7 @@ export default function Home() {
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
                   IMWUT{"'"}24
                 </span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>
                   ⭐ Distinguished Paper Award
                 </span>
               </div>

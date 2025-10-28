@@ -30,10 +30,10 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Women&apos;s Health</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Genetic Factors</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>HCI</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>Mixed Methods</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Women&apos;s Health</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)'}}>Genetic Factors</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>HCI</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Mixed Methods</span>
           </div>
         </div>
       </section>
@@ -70,11 +70,11 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>LLM</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>Voice Assistant</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Healthcare</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>User Studies</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Mixed Methods</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)'}}>LLM</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Voice Assistant</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Healthcare</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>User Studies</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Mixed Methods</span>
           </div>
           
           <div className="mt-3">
@@ -132,10 +132,10 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>Social Robots</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Education</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>Learning</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>Mixed Methods</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Social Robots</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Education</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>Learning</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Mixed Methods</span>
           </div>
           
           <div className="mt-3">
@@ -180,10 +180,10 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>mHealth</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>Chatbots</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>JITAI</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>Physical Activity</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>mHealth</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Chatbots</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>JITAI</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>Physical Activity</span>
           </div>
         </div>
 
@@ -205,11 +205,11 @@ export default function ResearchPage() {
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'var(--text-primary)' }}>AR/VR</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'white' }}>Unity</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'var(--text-primary)' }}>Unreal Engine</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'white' }}>Languages</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'var(--text-primary)' }}>3D Graphics</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>AR/VR</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Unity</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Unreal Engine</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Languages</span>
+            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>3D Graphics</span>
           </div>
         </div>
       </section>

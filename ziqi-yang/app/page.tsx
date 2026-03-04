@@ -61,6 +61,37 @@ export default function Home() {
         </p>
       </section>
 
+      {/* News Section */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-4 pastel-title-accent">News</h2>
+        <ul className="space-y-3 text-gray-700">
+          <li>
+            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+              2026.03
+            </span>
+            My CHI&apos;26 paper on sharing women&apos;s genetic health experiences is officially accepted! I will be presenting it at CHI 2026 in April in Barcelona, Spain.
+          </li>
+          <li>
+            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+              2026
+            </span>
+            CSCW&apos;26 paper on RECOVER, an LLM-based remote patient monitoring system for GI cancer care, accepted to PACMHCI&apos;26! I will be presenting it at CSCW 2026.
+          </li>
+          <li>
+            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+              2025
+            </span>
+            Science Robotics paper on learning with a robot peer accepted!
+          </li>
+          <li>
+            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+              2025.10
+            </span>
+            Talk2Care IMWUT&apos;24 paper received a Distinguished Paper Award : ) It was a great honor to be recognized for our work on improving patient-provider communication with AI.
+          </li>
+        </ul>
+      </section>
+
       {/* Research Highlights Section */}
       <section className="mb-16">
         <h2 className="text-2xl font-bold mb-6 pastel-title-accent">Research Highlights</h2>
@@ -214,13 +245,49 @@ export default function Home() {
         <ul className="space-y-4" style={{ color: 'var(--text-primary)' }}>
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--melon)' }}>
-              <p className="font-semibold">Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults <a
-                href="https://doi.org/10.1145/3659625"
-                target="_blank"
-                className="hover:underline transition-colors pastel-link-primary"
-              >
-                [PDF]
-              </a></p>
+              <p className="font-semibold">
+                Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities
+              </p>
+              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                <strong><u>Ziqi Yang</u></strong>, Daniel Epstein, Yunan Chen.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+                  CHI{"'"}26
+                </span>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--vanilla)' }}>
+              <p className="font-semibold">
+                RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care
+              </p>
+              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                <strong><u>Ziqi Yang</u></strong>, Yuxuan Lu, Jennifer Bagdasarian, Vedant Das Swain, Ritu Agarwal,
+                Collin Campbell, Waddah Al-Refaire, Jehan El-Bayoumi, Guodong Gao, Nawar Shara, Dakuo Wang, Bingsheng Yao.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-2">
+                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
+                  CSCW{"'"}26 / PACMHCI{"'"}26 (to appear)
+                </span>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--tea-rose-red)' }}>
+              <p className="font-semibold">
+                Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults{" "}
+                <a
+                  href="https://doi.org/10.1145/3659625"
+                  target="_blank"
+                  className="hover:underline transition-colors pastel-link-primary"
+                >
+                  [PDF]
+                </a>
+              </p>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
                 <strong><u>Ziqi Yang</u></strong>, Xuhai Xu, Bingsheng Yao, Ethan Rogers, Shao Zhang, Stephen Intille, Nawar Shara, Guodong Gordon Gao, and Dakuo Wang.
               </p>
@@ -234,16 +301,19 @@ export default function Home() {
               </div>
             </div>
           </li>
-          
+
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--vanilla)' }}>
-              <p className="font-semibold">CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity <a
-                href="https://doi.org/10.1145/3706598.3714272"
-                target="_blank"
-                className="hover:underline transition-colors pastel-link-primary"
-              >
-                [PDF]
-              </a></p>
+              <p className="font-semibold">
+                CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity{" "}
+                <a
+                  href="https://doi.org/10.1145/3706598.3714272"
+                  target="_blank"
+                  className="hover:underline transition-colors pastel-link-primary"
+                >
+                  [PDF]
+                </a>
+              </p>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
                 Siyi Wu, Weidan Cao, Shihan Fu, Bingsheng Yao, <strong><u>Ziqi Yang</u></strong>, Changchang Yin, Varun Mishra, Daniel Addison, Ping Zhang, and Dakuo Wang.
               </p>
@@ -257,7 +327,8 @@ export default function Home() {
           
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--tea-rose-red)' }}>
-              <p className="font-semibold">Observing a robot peer{"'"}s failures facilitates students{"'"} classroom learning <a
+              <p className="font-semibold">Observing a robot peer{"'"}s failures facilitates students{"'"} classroom learning{" "}
+                <a
                 href="https://doi.org/10.1126/scirobotics.adu5257"
                 target="_blank"
                 className="hover:underline transition-colors pastel-link-primary"
@@ -290,7 +361,7 @@ export default function Home() {
           </a>{" "}
           ·{" "}
           <a
-            href="https://scholar.google.com/citations?user=IU7kufwAAAAJ"
+            href="https://scholar.google.com/citations?user=mOC0708AAAAJ&hl=en&oi=ao"
             className="hover:underline transition-colors pastel-title-primary"
             target="_blank"
           >

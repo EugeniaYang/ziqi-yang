@@ -23,20 +23,30 @@ export default function Home() {
             Generative AI.
           </p>
           <div className="space-x-4">
-            <Link href="/research" className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
-                Research
+            <Link
+              href="/research"
+              className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
+              style={{ color: "text-primary" }}
+            >
+              Research
             </Link>
             <Link href="/ux-projects">
-              <button className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
+              <button
+                className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
+                style={{ color: "text-primary" }}
+              >
                 Design / UX Projects
               </button>
             </Link>
             <a
-              href="/files/ziqi_cv.pdf" // 把 CV 放到 public/files/ziqi_cv.pdf
+              href="/files/Ziqi_PhD_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg" style={{ color: 'text-primary' }}>
+              <button
+                className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
+                style={{ color: "text-primary" }}
+              >
                 CV
               </button>
             </a>
@@ -246,7 +256,14 @@ export default function Home() {
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--melon)' }}>
               <p className="font-semibold">
-                Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities
+                Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities{" "}
+                <a
+                  href="/files/_CHI_26_FamilyGeneticsWomenHealth_CameraReady.pdf"
+                  target="_blank"
+                  className="hover:underline transition-colors pastel-link-primary"
+                >
+                  [PDF]
+                </a>
               </p>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
                 <strong><u>Ziqi Yang</u></strong>, Daniel Epstein, Yunan Chen.
@@ -262,7 +279,14 @@ export default function Home() {
           <li>
             <div className="border-l-4 pl-4" style={{ borderColor: 'var(--vanilla)' }}>
               <p className="font-semibold">
-                RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care
+                RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care{" "}
+                <a
+                  href="/files/cscw032.pdf"
+                  target="_blank"
+                  className="hover:underline transition-colors pastel-link-primary"
+                >
+                  [PDF]
+                </a>
               </p>
               <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
                 <strong><u>Ziqi Yang</u></strong>, Yuxuan Lu, Jennifer Bagdasarian, Vedant Das Swain, Ritu Agarwal,
@@ -270,7 +294,7 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap gap-2 mb-2">
                 <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  CSCW{"'"}26 / PACMHCI{"'"}26 (to appear)
+                  CSCW{"'"}26 / PACMHCI{"'"}26
                 </span>
               </div>
             </div>

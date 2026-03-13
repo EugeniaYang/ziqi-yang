@@ -35,6 +35,22 @@ export default function ResearchPage() {
             <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>HCI</span>
             <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Mixed Methods</span>
           </div>
+
+          <div className="mt-3">
+            <p className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Deliverables</p>
+            <div className="space-y-2">
+              <div>
+                <a
+                  href="/files/_CHI_26_FamilyGeneticsWomenHealth_CameraReady.pdf"
+                  className="hover:underline transition-colors"
+                  style={{ color: 'var(--title-melon-dark)' }}
+                  target="_blank"
+                >
+                  📄 Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities - CHI&apos;26
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -88,6 +104,16 @@ export default function ResearchPage() {
                   target="_blank"
                 >
                   📄 Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults - IMWUT{"'"}24 [Distinguished Paper Award]
+                </a>
+              </div>
+              <div>
+                <a
+                  href="/files/cscw032.pdf"
+                  className="hover:underline transition-colors"
+                  style={{ color: 'var(--title-melon-dark)' }}
+                  target="_blank"
+                >
+                  📄 RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care - CSCW{"'"}26 / PACMHCI{"'"}26
                 </a>
               </div>
               <div>

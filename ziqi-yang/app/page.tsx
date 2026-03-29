@@ -375,7 +375,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t pt-6 text-center text-gray-600">
-        <p>© {new Date().getFullYear()} Ziqi Yang</p>
+        <p>© 2026 Ziqi Yang</p>
         <p>
           <a
             href="mailto:ziqiy30@uci.edu"

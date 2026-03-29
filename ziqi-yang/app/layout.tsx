@@ -23,10 +23,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const isMaintenanceMode = process.env.MAINTENANCE_MODE === 'true'
+
+  if (isMaintenanceMode) {
+    return (
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    )
+  }
+
   return (
     <html lang="en">
       <body className="mx-auto max-w-4xl px-6 py-6 font-sans">
-        {/* Navbar */}
         <nav className="mb-12 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold pastel-title-primary">
             Ziqi Yang
@@ -35,12 +44,11 @@ export default function RootLayout({
             <Link href="/research">Research</Link>
             <Link href="/ux-projects">Design / UX Projects</Link>
             <Link href="/cv">CV</Link>
-            
           </div>
         </nav>
         {children}
         <footer className="mt-16 text-sm text-center" style={{ color: 'var(--text-secondary)' }}>
-          © {new Date().getFullYear()} Ziqi Yang · Powered by Next.js + Tailwind
+          © 2026 Ziqi Yang · Powered by Next.js + Tailwind
         </footer>
       </body>
     </html>

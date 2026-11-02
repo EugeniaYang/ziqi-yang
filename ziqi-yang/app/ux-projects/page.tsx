@@ -26,7 +26,7 @@ const projects: Project[] = [
   },
   {
     title: "Campus Connect",
-    subtitle: "UX Research and Design for Campust Social App",
+    subtitle: "UX Research and Design for Campus Social App",
     href: "https://ziqis-portfolio.webflow.io/work/campus-connect",
     category: "UX R&D Projects",
     imageSrc: "/projects/campus-connect.png",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     {
     title: "MyVoice Website Optimization",
     subtitle: "UX Research and Design for Youth",
-    href: "  https://ziqis-portfolio.webflow.io/work/myvoice",
+    href: "https://ziqis-portfolio.webflow.io/work/myvoice",
     category: "UX R&D Projects",
     imageSrc: "/projects/myvoice.png",
   },
@@ -54,7 +54,7 @@ const projects: Project[] = [
   },
   {
     title: "Graphic Design Showcase",
-    subtitle: "Photography, Banner, and Inforgraphics",
+    subtitle: "Photography, Banners, and Infographics",
     href: "https://ziqis-portfolio.webflow.io/work/graphic-design",
     category: "Graphic Design",
     imageSrc: "/projects/infographics.png",
@@ -68,10 +68,10 @@ export default function DesignProjectsPage() {
   const categories = Array.from(new Set(projects.map((p) => p.category)));
 
   return (
-    <main className="max-w-5xl mx-auto px-6 py-12">
+    <main id="main-content" className="max-w-5xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold mb-8">Design / UX Projects</h1>
       <p className="text-gray-700 mb-8">
-        Below are selected interaction, graphic, and internship design works. Click to explore detail.
+        Selected interaction design, UX research, and industry projects. Explore each project for the design process and outcomes.
       </p>
 
       {categories.map((cat) => (

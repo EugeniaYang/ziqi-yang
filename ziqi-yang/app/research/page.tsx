@@ -1,244 +1,138 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import PublicationList from "../components/PublicationList";
+
+export const metadata: Metadata = {
+  title: "Research | Ziqi Yang",
+  description: "Human–AI interaction research spanning voice agents, creative tools, personal health software, and clinical AI.",
+};
+
+const projects = [
+  {
+    id: "voice-agents",
+    title: "Streaming Voice Agents for Creative Image Editing",
+    role: "Research Intern · Adobe Research",
+    date: "Summer 2026",
+    points: [
+      "Built a streaming voice-driven editing prototype integrating speech recognition, speech synthesis, LLM intent parsing, and tool orchestration in React/TypeScript and Node.js/Express.",
+      "Designed human-in-the-loop workflows for continuous spoken input and multi-step image editing, enabling users to inspect and revise AI actions while retaining creative control.",
+      "Led formative studies with 7 participants and a within-subject user study with 6 participants against a turn-based baseline. Combined behavioral event logs, NASA-TLX, Creativity Support Index, and interviews to evaluate workload, creativity support, and perceived control.",
+    ],
+    tags: ["Voice Agents", "Creative Tools", "Human–AI Collaboration", "Mixed Methods"],
+  },
+  {
+    id: "personal-health-agents",
+    title: "AI-Assisted Personal Health Software Development",
+    role: "Graduate Student Researcher · UC Irvine",
+    date: "2026–Present · Ongoing",
+    points: [
+      "Curated 124 web records documenting health-related personal software, preserving source provenance and screening metadata.",
+      "Conducting qualitative content analysis of LLM- and AI-agent-assisted development to examine health goals, data practices, customization, and verification challenges. This ongoing work aims to inform user-configurable personal health agents.",
+    ],
+    tags: ["Personal Health Informatics", "AI-Assisted Development", "Qualitative Analysis"],
+  },
+  {
+    id: "ambient-clinical-ai",
+    title: "Human-Centered Evaluation of Ambient Clinical AI",
+    role: "Research Collaborator · UC Irvine",
+    date: "2025–2026",
+    points: [
+      "Annotated clinician edits to AI-generated clinical notes and iteratively refined annotation guidelines to characterize edit patterns and clinician rationales.",
+      "Combined inductive and deductive analysis of clinician interviews and annotated edits to identify failure modes and inform clinician review, correction, and oversight of AI-assisted documentation.",
+    ],
+    tags: ["Clinical AI", "Human Oversight", "AI Evaluation"],
+    papers: ["jamia-edits", "jamia-rationale"],
+  },
+  {
+    id: "family-genetic-health",
+    title: "Women's Health and Family Communication",
+    role: "Graduate Student Researcher · UC Irvine",
+    date: "2024–2026",
+    points: [
+      "Designed and conducted a mixed-method survey with 249 U.S. women on sharing health experiences influenced by genetic factors within families.",
+      "Combined thematic analysis with ordinal logistic regression, Spearman's correlation, and chi-square analyses to examine relationships among reproductive experiences, family context, digital engagement, and genetic-health knowledge and communication.",
+      "Also conducting a systematic review of 320 ACM papers to identify requirements for women-centered health technologies and cross-generational communication.",
+    ],
+    tags: ["Women's Health", "Family Communication", "Genetic Health", "Mixed Methods"],
+    papers: ["chi2026", "amia2026"],
+  },
+  {
+    id: "llm-healthcare",
+    title: "Conversational and Multimodal AI for Patient–Provider Communication",
+    role: "Graduate Student Research Assistant · Northeastern University",
+    date: "2023–2024",
+    points: [
+      "Designed and prototyped LLM-powered voice assistants and multimodal systems for communication and monitoring, including Talk2Care, RECOVER, and CardioAI.",
+      "Built voice assistants and clinician dashboards using GPT-4, Alexa, AWS Lambda (Python), and React, integrating conversational and wearable-sensing data.",
+      "Used annotation-based evaluation to assess response quality, accuracy, hallucinations, and safety risks, alongside interviews, mixed-method user studies, longitudinal deployments, and computational analyses. Talk2Care received an IMWUT Distinguished Paper Award.",
+    ],
+    tags: ["Conversational AI", "Healthcare", "Voice Interfaces", "AI Evaluation"],
+    papers: ["talk2care", "recover", "cardioai"],
+    video: "https://youtu.be/fMMDN7gZGjs",
+  },
+  {
+    id: "social-robots",
+    title: "Generative AI, Social Robots, and Learning",
+    role: "Research Assistant · Zhejiang University",
+    date: "2024",
+    points: [
+      "Programmed Python behaviors for a NAO social robot and designed a between-subject experiment on generative-AI-driven embodied learning.",
+      "Evaluated learning and affective outcomes using ANCOVA and thematic analysis, identifying 23 axial codes and 6 themes with inter-rater reliability κ = 0.85.",
+    ],
+    tags: ["Human–Robot Interaction", "Education", "Mixed Methods"],
+    papers: ["robot"],
+  },
+  {
+    id: "behavior-change",
+    title: "Human-Centered AI for Behavior Change",
+    role: "Graduate Student Research Assistant · University of Michigan",
+    date: "2022–2024",
+    points: [
+      "Prototyped empathetic exercise-coach chatbots and LLM-powered just-in-time adaptive interventions. Conducted pilot studies, surveys, interviews, and crowdsourced analyses to study long-term user–AI interaction.",
+    ],
+    tags: ["mHealth", "Behavior Change", "Chatbots", "JITAI"],
+  },
+  {
+    id: "ar-vr",
+    title: "Designing Creative AR/VR Experiences for Languages",
+    role: "Student Research Programme · University of Michigan",
+    date: "2022–2023",
+    points: [
+      "Designed 3D graphics and prototyped immersive language experiences using Unity and Unreal Engine for Meta Quest, with the final environment deployed via Mozilla Hubs.",
+    ],
+    tags: ["AR/VR", "Interaction Design", "Languages"],
+  },
+];
 
 export default function ResearchPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-10 pastel-title-primary">Research</h1>
-
-      {/* Section: Family Genetic Health */}
-      <section id="family-genetic-health" className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pastel-title-primary">Family Genetic Health</h2>
-        
-        {/* UCI Research Experience */}
-        <div className="border rounded-lg shadow-sm p-6 mb-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
-          <h3 className="text-lg font-semibold mb-2">Graduate Student Researcher</h3>
-          <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
-            University of California, Irvine | 2024 – Present
-          </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Women&apos;s Health Systematic Review and Genetic Health Survey</h4>
-          
-          <div className="space-y-3">
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Conducted a systematic literature review on women&apos;s health in HCI, mapping research trends and identifying design gaps.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Designed and deployed a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Analyzed survey data to surface narrative patterns and barriers, informing speculative design opportunities for genetic health sharing, such as AI-driven storytelling.
-            </p>
-          </div>
-          
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Women&apos;s Health</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)'}}>Genetic Factors</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>HCI</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Mixed Methods</span>
-          </div>
-
-          <div className="mt-3">
-            <p className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Deliverables</p>
-            <div className="space-y-2">
-              <div>
-                <a
-                  href="/files/_CHI_26_FamilyGeneticsWomenHealth_CameraReady.pdf"
-                  className="hover:underline transition-colors"
-                  style={{ color: 'var(--title-melon-dark)' }}
-                  target="_blank"
-                >
-                  📄 Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities - CHI&apos;26
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <main id="main-content" className="py-6 sm:py-12">
+      <h1 className="mb-4 text-3xl font-bold pastel-title-primary">Research</h1>
+      <p className="mb-8 max-w-2xl leading-relaxed">I build and study interactive AI systems, connecting technical prototyping with empirical research on how people use, evaluate, and control them.</p>
+      <nav aria-label="Research sections" className="mb-12 flex flex-wrap gap-3 text-sm">
+        <a className="text-link" href="#voice-agents">Voice agents</a>
+        <a className="text-link" href="#personal-health-agents">Personal health</a>
+        <a className="text-link" href="#ambient-clinical-ai">Clinical AI</a>
+        <a className="text-link" href="#family-genetic-health">Family health</a>
+        <a className="text-link" href="#publications">Publications</a>
+      </nav>
+      <div className="space-y-10">
+        {projects.map((project) => (
+          <section id={project.id} key={project.id} className="research-card scroll-mt-8 p-5 sm:p-7">
+            <p className="mb-2 text-sm font-medium" style={{ color: "var(--text-secondary)" }}>{project.role} · {project.date}</p>
+            <h2 className="mb-4 text-xl font-semibold pastel-title-primary">{project.title}</h2>
+            <ul className="list-disc space-y-3 pl-5 leading-relaxed">
+              {project.points.map((point) => <li key={point}>{point}</li>)}
+            </ul>
+            <div className="mt-5 flex flex-wrap gap-2">{project.tags.map((tag) => <span key={tag} className="research-tag">{tag}</span>)}</div>
+            {project.papers && <div className="mt-6 border-t border-[var(--tea-rose-red)] pt-5"><PublicationList ids={project.papers} /></div>}
+            {project.video && <a className="text-link mt-4 inline-block text-sm" href={project.video} target="_blank" rel="noopener noreferrer">Watch the Talk2Care video ↗</a>}
+          </section>
+        ))}
+      </div>
+      <section id="publications" className="mt-16 scroll-mt-8">
+        <h2 className="section-title">Publications</h2>
+        <PublicationList />
       </section>
-
-      {/* Section: LLM for Healthcare Communication */}
-      <section id="llm-healthcare" className="mb-16">
-        
-        <h2 className="text-2xl font-semibold mb-6 pastel-title-primary">LLM for Healthcare Communication</h2>
-        
-        {/* Northeastern Research Experience */}
-        <div className="border rounded-lg shadow-sm p-6 mb-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
-          <h3 className="text-lg font-semibold mb-2">Graduate Student Research Assistant</h3>
-          <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
-            Northeastern University | 2021-2023
-          </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>LLM-Facilitated Patient–Provider Communication</h4>
-          
-          <div className="space-y-3">
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Conducted interviews with 19 older adults and healthcare providers to uncover communication barriers and design opportunities for LLM-powered systems.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Designed and developed Talk2Care, integrating a voice assistant (Alexa + Python Lambda) for patients and an information dashboard (Figma, React) for providers with GPT-4.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Ran mixed-method user studies (Qualtrics SUS survey + interviews), demonstrating strong usability and surfacing design implications for LLM-mediated communication.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Tested LLaMA-2 (7B/13B/70B) models on Amazon BedRock and SageMaker, exploring customization, personalization, and scalability for healthcare contexts.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Facilitated participatory design sessions with cancer care providers and patients; developed a GPT-4–enabled monitoring system, RECOVER, and conducted multi-stage deployment studies and mixed-method evaluation.
-            </p>
-          </div>
-          
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)'}}>LLM</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Voice Assistant</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Healthcare</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>User Studies</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Mixed Methods</span>
-          </div>
-          
-          <div className="mt-3">
-            <p className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Deliverables</p>
-            <div className="space-y-2">
-              <div>
-                <a
-                  href="https://doi.org/10.1145/3659625"
-                  className="hover:underline transition-colors"
-                  style={{ color: 'var(--title-melon-dark)' }}
-                  target="_blank"
-                >
-                  📄 Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults - IMWUT{"'"}24 [Distinguished Paper Award]
-                </a>
-              </div>
-              <div>
-                <a
-                  href="/files/cscw032.pdf"
-                  className="hover:underline transition-colors"
-                  style={{ color: 'var(--title-melon-dark)' }}
-                  target="_blank"
-                >
-                  📄 RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care - CSCW{"'"}26 / PACMHCI{"'"}26
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://doi.org/10.1145/3706598.3714272"
-                  className="hover:underline transition-colors"
-                  style={{ color: 'var(--title-melon-dark)' }}
-                  target="_blank"
-                >
-                  📄 CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity - CHI {"'"}25
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </section>
-
-      {/* Section: Social Robots & Education */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pastel-title-primary">Social Robots & Education</h2>
-        
-        {/* Zhejiang University Research Experience */}
-        <div className="border rounded-lg shadow-sm p-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
-          <h3 className="text-lg font-semibold mb-2">Research Assistant</h3>
-          <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
-            Zhejiang University | 2024
-          </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Social Robots and Education</h4>
-          
-          <div className="space-y-3">
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Programmed Python scripts for the NAO social robot and designed a between-subject experiment on generative AI–driven embodied learning.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Applied quantitative analysis (learning and emotion scales, ANCOVA) to evaluate knowledge acquisition and emotional outcomes.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Led qualitative analysis for survey data using iterative coding and thematic analysis, identifying 23 axial codes and 6 themes (inter-rater reliability k=0.85).
-            </p>
-          </div>
-          
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>Social Robots</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Education</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>Learning</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Mixed Methods</span>
-          </div>
-          
-          <div className="mt-3">
-            <p className="text-xs font-semibold mb-2" style={{ color: 'var(--text-secondary)' }}>Deliverables</p>
-            <div className="space-y-2">
-              <div>
-            <a
-              href="https://doi.org/10.1126/scirobotics.adu5257"
-              className="hover:underline transition-colors"
-              style={{ color: 'var(--title-melon-dark)' }}
-              target="_blank"
-            >
-              📄 Observing a robot peer{"'"}s failures facilitates students{"'"} classroom learning - Science Robotics, {"'"}25
-            </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        
-      </section>
-
-      {/* Section: Others */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 pastel-title-primary">Others</h2>
-        
-        {/* University of Michigan - mHealth Interventions */}
-        <div className="border rounded-lg shadow-sm p-6 mb-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
-          <h3 className="text-lg font-semibold mb-2">Graduate Student Research Assistant</h3>
-          <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
-            University of Michigan, Ann Arbor | 2022–2024
-          </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Designing mHealth Interventions</h4>
-          
-          <div className="space-y-3">
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Prototyped empathetic exercise coach chatbots (scripts + Figma) to study long-term user–chatbot relationships; conducted pilot studies (n=6) with surveys and interviews; analyzed data from Amazon Mechanical Turk to reveal user preferences.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Developed AI-driven Just-In-Time Adaptive Interventions (JITAI) using technology probes to promote physical activity.
-            </p>
-          </div>
-          
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>mHealth</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Chatbots</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>JITAI</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>Physical Activity</span>
-          </div>
-        </div>
-
-        {/* University of Michigan - AR/VR Experiences */}
-        <div className="border rounded-lg shadow-sm p-6" style={{ backgroundColor: 'var(--bg-secondary)' }}>
-          <h3 className="text-lg font-semibold mb-2">Student Research Programme</h3>
-          <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
-            University of Michigan, Ann Arbor | 2022–2023
-          </p>
-          <h4 className="font-semibold mb-3" style={{ color: 'var(--title-melon-dark)' }}>Designing Creative AR/VR Experiences for Languages</h4>
-          
-          <div className="space-y-3">
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Designed 3D graphics for AR/VR environments on Meta Quest for the shape and flow of languages, prototyping and testing experiences using Unity and Unreal Engine.
-            </p>
-            <p className="text-sm" style={{ color: 'var(--text-primary)' }}>
-              • Developed and deployed the final immersive environment via Mozilla Hubs.
-            </p>
-          </div>
-          
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)' }}>AR/VR</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)' }}>Unity</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>Unreal Engine</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)' }}>Languages</span>
-            <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)' }}>3D Graphics</span>
-          </div>
-        </div>
-      </section>
-    </div>
+    </main>
   );
 }

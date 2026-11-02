@@ -1,406 +1,113 @@
 import Image from "next/image";
 import Link from "next/link";
+import PublicationList from "./components/PublicationList";
 
 export default function Home() {
   return (
-    <main className="max-w-5xl mx-auto px-6 py-12">
-      {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center mb-16">
-        <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-          <Image
-            src="/profile-portugal.png" // 替换成你的头像路径 (放在 public/avatar.jpg)
-            alt="Ziqi Yang"
-            width={180}
-            height={180}
-            className="rounded-full shadow-lg"
-          />
-        </div>
-        <div className="md:w-2/3 md:pl-10 text-center md:text-left">
-          <h1 className="text-4xl font-bold mb-3 pastel-title-primary">Ziqi Yang</h1>
-          <p className="text-lg mb-4">
-            PhD Student in Informatics @ University of California, Irvine.
-            Research in Human-Computer Interaction, Health Informatics, and
-            Generative AI.
-          </p>
-          <div className="space-x-4">
-            <Link
-              href="/research"
-              className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
-              style={{ color: "text-primary" }}
-            >
-              Research
-            </Link>
-            <Link href="/ux-projects">
-              <button
-                className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
-                style={{ color: "text-primary" }}
-              >
-                Design / UX Projects
-              </button>
-            </Link>
-            <a
-              href="/files/Ziqi_PhD_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="px-4 py-2 rounded-lg transition-colors pastel-button-primary hover:shadow-lg"
-                style={{ color: "text-primary" }}
-              >
-                CV
-              </button>
-            </a>
+    <main id="main-content" className="py-6 sm:py-12">
+      <section className="mb-16 flex flex-col items-center gap-8 md:flex-row md:gap-10">
+        <Image src="/profile-portugal.png" alt="Ziqi Yang" width={180} height={180} priority className="rounded-full shadow-lg" />
+        <div className="text-center md:text-left">
+          <p className="mb-2 text-sm font-semibold tracking-wide">HUMAN–AI INTERACTION RESEARCHER</p>
+          <h1 className="mb-3 text-4xl font-bold pastel-title-primary">Ziqi Yang</h1>
+          <p className="mb-5 text-lg leading-relaxed">PhD student in Informatics at UC Irvine. I build and evaluate AI agents and interactive systems for creative work and healthcare.</p>
+          <div className="flex flex-wrap justify-center gap-3 md:justify-start">
+            <Link href="/research" className="rounded-lg px-4 py-2 pastel-button-primary">Research</Link>
+            <Link href="/ux-projects" className="rounded-lg px-4 py-2 pastel-button-secondary">Design / UX Projects</Link>
+            <a href="/files/ziqi_cv.pdf" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-[var(--tea-rose-red)] px-4 py-2">CV ↗</a>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-4 pastel-title-secondary">About Me</h2>
-        <p className="text-gray-700 leading-relaxed mb-3">
-          I am a PhD student at UCI co-advised by Prof. Yunan Chen and Prof. Daniel
-          Epstein. My research interests lie in human-computer interaction and
-          personal health informatics. Previously, I received my MS in
-          Information Science at the University of Michigan, and my BS in
-          Electrical and Computer Engineering at Shanghai Jiao Tong University.
-        </p>
-        <p className="text-gray-700 leading-relaxed">
-          Outside of research, I enjoy travelling, photography, and exploring
-          new sports. I’m always happy to meet new ideas, opportunities, and
-          collaborators!
-        </p>
+      <section className="mb-14">
+        <h2 className="section-title">About Me</h2>
+        <p className="mb-4 leading-relaxed">I am a PhD student at the University of California, Irvine, co-advised by Prof. Yunan Chen and Prof. Daniel A. Epstein. My research asks how people can work with, understand, and retain control over AI systems. I combine full-stack prototyping with mixed-methods evaluation, focusing on voice interaction, human–agent collaboration, and personal health informatics.</p>
+        <p className="mb-4 leading-relaxed">In summer 2026, I was a Research Intern at Adobe Research, working on streaming voice agents for creative image editing. My other industry experience includes Microsoft, eBay, and Xiaohongshu. I received my M.S. in Information from the University of Michigan and B.S. in Electrical and Computer Engineering from Shanghai Jiao Tong University.</p>
+        <p className="leading-relaxed">Outside of research, I enjoy travelling, photography, and exploring new sports. I am always happy to connect about research, opportunities, and collaborations!</p>
       </section>
 
-      {/* News Section */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-4 pastel-title-accent">News</h2>
-        <ul className="space-y-3 text-gray-700">
-          <li>
-            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-              2026.03
-            </span>
-            My CHI&apos;26 paper on sharing women&apos;s genetic health experiences is officially accepted! I will be presenting it at CHI 2026 in April in Barcelona, Spain.
-          </li>
-          <li>
-            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-              2026
-            </span>
-            CSCW&apos;26 paper on RECOVER, an LLM-based remote patient monitoring system for GI cancer care, accepted to PACMHCI&apos;26! I will be presenting it at CSCW 2026.
-          </li>
-          <li>
-            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-              2025
-            </span>
-            Science Robotics paper on learning with a robot peer accepted!
-          </li>
-          <li>
-            <span className="inline-block px-2 py-0.5 mr-2 rounded-full text-xs font-semibold" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-              2025.10
-            </span>
-            Talk2Care IMWUT&apos;24 paper received a Distinguished Paper Award : ) It was a great honor to be recognized for our work on improving patient-provider communication with AI.
-          </li>
+      <section className="mb-14">
+        <h2 className="section-title">News</h2>
+        <ul className="space-y-4">
+          <li><span className="research-tag mr-2">2026</span>Our paper on family context and women&apos;s genetic health knowledge and communication was accepted to AMIA 2026.</li>
+          <li><span className="research-tag mr-2">Summer 2026</span>I joined Adobe Research as a Research Intern to explore streaming voice interaction for creative image editing.</li>
+          <li><span className="research-tag mr-2">2026</span>Our two papers on clinician edits and review of ambient AI-drafted clinical notes were published in <em>JAMIA</em>.</li>
+          <li><span className="research-tag mr-2">2026</span>Our work on sharing women&apos;s genetic health experiences appeared at CHI 2026, and RECOVER appeared in PACMHCI for CSCW 2026.</li>
+          <li><span className="research-tag mr-2">2025</span>Talk2Care received an IMWUT Distinguished Paper Award.</li>
         </ul>
       </section>
 
-      {/* Research Highlights Section */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-6 pastel-title-accent">Research Highlights</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Genetic Health Research Highlight */}
-          <div className="border rounded-lg overflow-hidden ">
-            <div className="p-6" style={{ backgroundColor: 'var(--lavender-blush)' }}>
-              <Image
-                src="/projects/family-tree-annotate-final.svg"
-                alt="Family Tree for Genetic Health"
-                width={600}
-                height={400}
-                className="object-contain mx-auto"
-              />
+      <section className="mb-14">
+        <h2 className="section-title">Research Highlights</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <article className="research-card">
+            <div className="flex min-h-40 flex-col justify-center gap-3 bg-[var(--tea-rose-red)] p-6 text-[#463541]">
+              <span className="text-xs font-semibold tracking-widest">ADOBE RESEARCH · SUMMER 2026</span>
+              <p className="text-2xl font-semibold" style={{ color: "inherit" }}>Speak. Create. Refine.</p>
+              <p className="text-sm" style={{ color: "inherit" }}>Voice interaction × creative control</p>
             </div>
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-2">
-                Sharing Women{"'"}s Health Experiences Influenced by Genetic Factors
-              </h3>
-              <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>
-                CHI 26 Submission | University of California, Irvine
-              </p>
-              <p className="text-sm mb-3" style={{ color: 'var(--text-primary)' }}>
-                Conducted a mixed-method survey with 249 U.S. women to study inter-generational sharing of genetic health experiences.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--lavender-blush)', color: 'black' }}>Women&apos;s Health</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'black' }}>Genetic Factors</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--vanilla)', color: 'black' }}>HCI</span>
-              </div>
-              <div className="mt-3">
-                <a
-                  href="/research#family-genetic-health"
-                  className="px-4 py-2 rounded-md text-sm font-medium transition-colors hover:shadow-lg"
-                  style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}
-                >
-                  Learn More →
-                </a>
-              </div>
+            <div className="p-5">
+              <h3 className="mb-2 text-lg font-semibold">Streaming Voice Agents for Creative Image Editing</h3>
+              <p className="mb-4 text-sm leading-relaxed">Built an LLM-powered voice editing prototype and studied how continuous spoken interaction supports creative workflows and user control.</p>
+              <Link className="text-link" href="/research#voice-agents">Explore project →</Link>
             </div>
-          </div>
-
-          {/* Talk2Care Highlight */}
-          <div className="border rounded-lg overflow-hidden ">
-            <Image
-              src="/projects/talk2care.png"
-              alt="Talk2Care"
-              width={600}
-              height={400}
-              className="object-cover"
-            />
-            <div className="p-4">
-              <h3 className="font-semibold text-lg mb-2">
-                Talk2Care: LLM Voice Assistant for Patient-Provider
-                Communication
-              </h3>
-              <p className="text-sm mb-2" style={{ color: 'var(--text-secondary)' }}>
-                IMWUT 2024 [Distinguished Paper Award]
-              </p>
-              <p className="text-sm mb-3" style={{ color: 'var(--text-primary)' }}>
-                Exploring a voice-based assistant leveraging large language models to improve patient–provider communication in healthcare contexts.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-3">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--melon)', color: 'black' }}>LLM</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)', color: 'black' }}>Voice Assistant</span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--tea-rose-red)', color: 'black' }}>Healthcare</span>
-              </div>
-              <div className="mt-3 mb-3">
-                <a
-                  href="/research#llm-healthcare"
-                  className="px-4 py-2 rounded-md text-sm font-medium transition-colors hover:shadow-lg"
-                  style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}
-                >
-                  Learn More →
-                </a>
-              </div>
-              <div className="space-x-3">
-                <a
-                  href="https://doi.org/10.1145/3659625"
-                  className="hover:underline transition-colors pastel-title-primary"
-                  target="_blank"
-                >
-                  [PDF]
-                </a>
-                <a
-                  href="https://youtu.be/fMMDN7gZGjs"
-                  className="hover:underline transition-colors pastel-title-primary"
-                  target="_blank"
-                >
-                  [Video]
-                </a>
-              </div>
+          </article>
+          <article className="research-card">
+            <div className="flex min-h-40 flex-col justify-center gap-3 bg-[var(--vanilla)] p-6 text-[#463541]">
+              <span className="text-xs font-semibold tracking-widest">UC IRVINE · ONGOING</span>
+              <p className="text-2xl font-semibold" style={{ color: "inherit" }}>Personal health, personal tools.</p>
+              <p className="text-sm" style={{ color: "inherit" }}>AI-assisted development × everyday needs</p>
             </div>
-          </div>
-
+            <div className="p-5">
+              <h3 className="mb-2 text-lg font-semibold">AI-Assisted Personal Health Software</h3>
+              <p className="mb-4 text-sm leading-relaxed">Investigating how people use LLMs and AI agents to develop personal health software, with attention to customization, data practices, and verification.</p>
+              <Link className="text-link" href="/research#personal-health-agents">Explore project →</Link>
+            </div>
+          </article>
+          <article className="research-card">
+            <div className="flex h-48 items-center justify-center bg-[#fef9fb] p-5">
+              <Image src="/projects/family-tree-annotate-final.svg" alt="Family tree illustrating genetic health experiences across generations" width={600} height={400} className="max-h-full w-auto object-contain" />
+            </div>
+            <div className="p-5">
+              <h3 className="mb-2 text-lg font-semibold">Women&apos;s Health and Family Communication</h3>
+              <p className="mb-2 text-sm font-medium">CHI 2026 · AMIA 2026 (accepted)</p>
+              <p className="mb-4 text-sm leading-relaxed">A mixed-method survey with 249 U.S. women on sharing health experiences influenced by genetic factors within families.</p>
+              <Link className="text-link" href="/research#family-genetic-health">Explore project →</Link>
+            </div>
+          </article>
+          <article className="research-card">
+            <Image src="/projects/talk2care.png" alt="Talk2Care voice assistant and clinician dashboard" width={600} height={400} className="h-48 w-full object-contain bg-white" />
+            <div className="p-5">
+              <h3 className="mb-2 text-lg font-semibold">Talk2Care: Voice AI for Patient–Provider Communication</h3>
+              <p className="mb-2 text-sm font-medium">IMWUT 2024 · Distinguished Paper Award</p>
+              <p className="mb-4 text-sm leading-relaxed">Designed and evaluated an LLM-based voice assistant and clinician dashboard to support communication between older adults and healthcare providers.</p>
+              <Link className="text-link" href="/research#llm-healthcare">Explore project →</Link>
+            </div>
+          </article>
         </div>
       </section>
 
-    {/* UX Research & Design Highlights Section */}
-<section className="mb-16">
-  <h2 className="text-2xl font-bold mb-6 pastel-title-yellow">UX Research &amp; Design Highlights</h2>
-  <div className="grid md:grid-cols-2 gap-6">
-
-    {/* Big Data Hub Project */}
-    <a href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-2859ea4a2d0080e2bd0fda685aa731f7" className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-      <Image
-        src="/projects/big-data-hub.png" // placeholder, put actual preview later
-        alt="Big Data Hub"
-        width={600}
-        height={400}
-        className="object-cover"
-      />
-      <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">
-          Understanding Professionals to Design Data Pipelines for eBay Big Data Hub
-        </h3>
-        <p className="text-sm text-gray-600 mb-2">User Research, Product Management, UX Design</p>
-        {/* <a
-          href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-158c4c00f2ad4c3e82e0680dd2231cf5"
-          className="hover:underline transition-colors pastel-title-primary"
-        >
-          [Showcase]
-        </a> */}
-      </div>
-    </a>
-
-    {/* MyVoice Website Optimization */}
-    <a href="https://ziqis-portfolio.webflow.io/work/myvoice" className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-      <Image
-        src="/projects/myvoice.png" // placeholder, replace with actual screenshot
-        alt="MyVoice Website Optimization"
-        width={600}
-        height={400}
-        className="object-cover"
-      />
-      <div className="p-4">
-        <h3 className="font-semibold text-lg mb-2">
-          Understanding Multiple Stakeholders for a Youth-centered Website
-        </h3>
-        <p className="text-sm text-gray-600 mb-2">User Research, UX Design</p>
-         
-      </div>
-    </a>
-
-  </div>
-</section>
-
-      {/* Selected Publications */}
-      <section className="mb-16">
-        <h2 className="text-2xl font-bold mb-6 pastel-title-lavender">Selected Publications</h2>
-        <ul className="space-y-4" style={{ color: 'var(--text-primary)' }}>
-          <li>
-            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--melon)' }}>
-              <p className="font-semibold">
-                Sharing Women&apos;s Health Experiences Influenced by Genetic Factors: Practices, Challenges, and Opportunities{" "}
-                <a
-                  href="/files/_CHI_26_FamilyGeneticsWomenHealth_CameraReady.pdf"
-                  target="_blank"
-                  className="hover:underline transition-colors pastel-link-primary"
-                >
-                  [PDF]
-                </a>
-              </p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                <strong><u>Ziqi Yang</u></strong>, Daniel Epstein, Yunan Chen.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  CHI{"'"}26
-                </span>
-              </div>
-            </div>
-          </li>
-          
-          <li>
-            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--vanilla)' }}>
-              <p className="font-semibold">
-                RECOVER: Designing a Large Language Model-based Remote Patient Monitoring System for Postoperative GI Cancer Care{" "}
-                <a
-                  href="/files/cscw032.pdf"
-                  target="_blank"
-                  className="hover:underline transition-colors pastel-link-primary"
-                >
-                  [PDF]
-                </a>
-              </p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                <strong><u>Ziqi Yang</u></strong>, Yuxuan Lu, Jennifer Bagdasarian, Vedant Das Swain, Ritu Agarwal,
-                Collin Campbell, Waddah Al-Refaire, Jehan El-Bayoumi, Guodong Gao, Nawar Shara, Dakuo Wang, Bingsheng Yao.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  CSCW{"'"}26 / PACMHCI{"'"}26
-                </span>
-              </div>
-            </div>
-          </li>
-          
-          <li>
-            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--tea-rose-red)' }}>
-              <p className="font-semibold">
-                Talk2Care: An LLM-based Voice Assistant for Communication between Healthcare Providers and Older Adults{" "}
-                <a
-                  href="https://doi.org/10.1145/3659625"
-                  target="_blank"
-                  className="hover:underline transition-colors pastel-link-primary"
-                >
-                  [PDF]
-                </a>
-              </p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                <strong><u>Ziqi Yang</u></strong>, Xuhai Xu, Bingsheng Yao, Ethan Rogers, Shao Zhang, Stephen Intille, Nawar Shara, Guodong Gordon Gao, and Dakuo Wang.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  IMWUT{"'"}24
-                </span>
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--icterine)' }}>
-                  ⭐ Distinguished Paper Award
-                </span>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--vanilla)' }}>
-              <p className="font-semibold">
-                CardioAI: A Multimodal AI-based System to Support Symptom Monitoring and Risk Prediction of Cancer Treatment-Induced Cardiotoxicity{" "}
-                <a
-                  href="https://doi.org/10.1145/3706598.3714272"
-                  target="_blank"
-                  className="hover:underline transition-colors pastel-link-primary"
-                >
-                  [PDF]
-                </a>
-              </p>
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Siyi Wu, Weidan Cao, Shihan Fu, Bingsheng Yao, <strong><u>Ziqi Yang</u></strong>, Changchang Yin, Varun Mishra, Daniel Addison, Ping Zhang, and Dakuo Wang.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  CHI {"'"}25
-                </span>
-              </div>
-            </div>
-          </li>
-          
-          <li>
-            <div className="border-l-4 pl-4" style={{ borderColor: 'var(--tea-rose-red)' }}>
-              <p className="font-semibold">Observing a robot peer{"'"}s failures facilitates students{"'"} classroom learning{" "}
-                <a
-                href="https://doi.org/10.1126/scirobotics.adu5257"
-                target="_blank"
-                className="hover:underline transition-colors pastel-link-primary"
-              >
-                [PDF]
-              </a></p> 
-              <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                Liuqing Chen, Yu Cai, Yuyang Fang, <strong><u>Ziqi Yang</u></strong>, Duowei Xia, Jiaxiang You, Shuhong Xiao, Yaxuan Song, Lingwei Zhan, Juanjuan Chen, and Lingyun Sun.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-2">
-                <span className="px-2 py-1 rounded text-xs" style={{ backgroundColor: 'var(--title-melon-dark)', color: 'white' }}>
-                  Science Robotics, 2025
-                </span>
-              </div>
-              
-            </div>
-          </li>
-        </ul>
+      <section className="mb-14">
+        <div className="mb-6 flex flex-wrap items-baseline justify-between gap-3">
+          <h2 className="section-title mb-0">Selected Publications</h2>
+          <Link href="/research#publications" className="text-link text-sm">All publications →</Link>
+        </div>
+        <PublicationList ids={["amia2026", "chi2026", "recover", "jamia-edits", "talk2care"]} />
       </section>
 
-      {/* Footer */}
-      <footer className="border-t pt-6 text-center text-gray-600">
-        <p>© 2026 Ziqi Yang</p>
-        <p>
-          <a
-            href="mailto:ziqiy30@uci.edu"
-            className="hover:underline transition-colors pastel-title-primary"
-          >
-            ziqiy30@uci.edu
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://scholar.google.com/citations?user=mOC0708AAAAJ&hl=en&oi=ao"
-            className="hover:underline transition-colors pastel-title-primary"
-            target="_blank"
-          >
-            Google Scholar
-          </a>{" "}
-          ·{" "}
-          <a
-            href="https://github.com/EugeniaYang"
-            className="hover:underline transition-colors pastel-title-primary"
-            target="_blank"
-          >
-            GitHub
+      <section>
+        <h2 className="section-title">UX Research &amp; Design Highlights</h2>
+        <div className="grid gap-6 md:grid-cols-2">
+          <a href="https://ziqi-yang.notion.site/Big-Data-Hub-PM-Design-2859ea4a2d0080e2bd0fda685aa731f7" className="research-card block transition-shadow hover:shadow-lg">
+            <Image src="/projects/big-data-hub.png" alt="eBay Big Data Hub design project" width={600} height={400} className="h-44 w-full object-cover" />
+            <div className="p-5"><h3 className="mb-2 font-semibold">Understanding Professionals to Design Data Pipelines for eBay Big Data Hub</h3><p className="text-sm">User Research · Product Management · UX Design</p></div>
           </a>
-        </p>
-      </footer>
+          <a href="https://ziqis-portfolio.webflow.io/work/myvoice" className="research-card block transition-shadow hover:shadow-lg">
+            <Image src="/projects/myvoice.png" alt="MyVoice youth-centered website design" width={600} height={400} className="h-44 w-full object-cover" />
+            <div className="p-5"><h3 className="mb-2 font-semibold">Understanding Multiple Stakeholders for a Youth-Centered Website</h3><p className="text-sm">User Research · UX Design</p></div>
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

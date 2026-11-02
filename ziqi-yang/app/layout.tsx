@@ -1,56 +1,49 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link'
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import Link from "next/link";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ziqi-yang.vercel.app"),
+  title: "Ziqi Yang",
+  description: "Ziqi Yang is a PhD researcher at UC Irvine building and evaluating AI agents and interactive systems for creative work and healthcare.",
+  openGraph: {
+    title: "Ziqi Yang · Human–AI Interaction Researcher",
+    description: "Voice agents, creative tools, and human-centered AI for healthcare. PhD student in Informatics at UC Irvine.",
+    url: "https://ziqi-yang.vercel.app",
+    type: "website",
+  },
+};
 
-export const metadata = {
-  title: 'Ziqi Yang',
-  description: 'PhD in Informatics / HCI / UX Research',
-}
-
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  const isMaintenanceMode = process.env.MAINTENANCE_MODE === 'true'
-
-  if (isMaintenanceMode) {
-    return (
-      <html lang="en">
-        <body>{children}</body>
-      </html>
-    )
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  if (process.env.MAINTENANCE_MODE === "true") {
+    return <html lang="en"><body>{children}</body></html>;
   }
 
   return (
     <html lang="en">
-      <body className="mx-auto max-w-4xl px-6 py-6 font-sans">
-        <nav className="mb-12 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold pastel-title-primary">
-            Ziqi Yang
-          </Link>
-          <div className="space-x-6 text-sm" style={{ color: 'var(--text-primary)' }}>
-            <Link href="/research">Research</Link>
-            <Link href="/ux-projects">Design / UX Projects</Link>
-            <Link href="/cv">CV</Link>
-          </div>
-        </nav>
+      <body className="mx-auto max-w-4xl px-5 py-6 font-sans sm:px-8">
+        <a href="#main-content" className="skip-link">Skip to content</a>
+        <header>
+          <nav aria-label="Main navigation" className="mb-6 flex flex-wrap items-center justify-between gap-5 border-b border-[var(--tea-rose-red)] pb-5">
+            <Link href="/" className="text-xl font-bold pastel-title-primary">Ziqi Yang</Link>
+            <div className="flex flex-wrap gap-x-5 gap-y-3 text-sm">
+              <Link href="/research">Research</Link>
+              <Link href="/ux-projects">Design / UX Projects</Link>
+              <Link href="/cv">CV</Link>
+            </div>
+          </nav>
+        </header>
         {children}
-        <footer className="mt-16 text-sm text-center" style={{ color: 'var(--text-secondary)' }}>
-          © 2026 Ziqi Yang · Powered by Next.js + Tailwind
+        <footer className="mt-16 border-t border-[var(--tea-rose-red)] pt-6 text-center text-sm">
+          <div className="mb-3 flex flex-wrap justify-center gap-x-5 gap-y-3">
+            <a className="text-link" href="mailto:ziqiy30@uci.edu">Email</a>
+            <a className="text-link" href="https://scholar.google.com/citations?user=mOC0708AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a className="text-link" href="https://github.com/EugeniaYang" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a className="text-link" href="https://www.linkedin.com/in/ziqiyang0605/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+          <p>© {new Date().getFullYear()} Ziqi Yang</p>
         </footer>
       </body>
     </html>
-  )
+  );
 }
